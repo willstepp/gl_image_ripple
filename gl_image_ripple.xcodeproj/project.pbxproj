@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		651002C915F2E3BA00B38890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002C815F2E3BA00B38890 /* UIKit.framework */; };
+		651002CB15F2E3BA00B38890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002CA15F2E3BA00B38890 /* Foundation.framework */; };
+		651002CD15F2E3BA00B38890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002CC15F2E3BA00B38890 /* CoreGraphics.framework */; };
+		651002E015F2E59700B38890 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002DF15F2E59700B38890 /* QuartzCore.framework */; };
+		651002E215F2E59F00B38890 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002E115F2E59F00B38890 /* OpenGLES.framework */; };
+		651002E415F2E5AA00B38890 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651002E315F2E5AA00B38890 /* GLKit.framework */; };
+		6510034E15F3F2B000B38890 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6510034D15F3F2B000B38890 /* CoreVideo.framework */; };
+		654FF64A17234172001AFE08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654FF62117234172001AFE08 /* InfoPlist.strings */; };
+		654FF65017234172001AFE08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF62917234172001AFE08 /* main.m */; };
+		654FF65117234172001AFE08 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654FF62A17234172001AFE08 /* MainStoryboard.storyboard */; };
+		654FF65E17234172001AFE08 /* RESOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63817234172001AFE08 /* RESOAppDelegate.m */; };
+		654FF65F17234172001AFE08 /* RESOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63B17234172001AFE08 /* RESOViewController.m */; };
+		654FF66017234172001AFE08 /* RippleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63D17234172001AFE08 /* RippleModel.m */; };
+		654FF66D17234322001AFE08 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 654FF63E17234172001AFE08 /* Shader.fsh */; };
+		654FF66E17234322001AFE08 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 654FF63F17234172001AFE08 /* Shader.vsh */; };
+		654FF67017234397001AFE08 /* nebula_orange.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 654FF66F17234397001AFE08 /* nebula_orange.jpg */; };
+		65EADA0B1703F784007CB200 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EADA0A1703F784007CB200 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		651002C415F2E3BA00B38890 /* gl_image_ripple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gl_image_ripple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		651002C815F2E3BA00B38890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		651002CA15F2E3BA00B38890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		651002CC15F2E3BA00B38890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		651002DF15F2E59700B38890 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		651002E115F2E59F00B38890 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		651002E315F2E5AA00B38890 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		6510034D15F3F2B000B38890 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		654FF62217234172001AFE08 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		654FF62317234172001AFE08 /* gl_image_ripple-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "gl_image_ripple-Info.plist"; sourceTree = "<group>"; };
+		654FF62417234172001AFE08 /* gl_image_ripple-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gl_image_ripple-Prefix.pch"; sourceTree = "<group>"; };
+		654FF62917234172001AFE08 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		654FF62A17234172001AFE08 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		654FF63717234172001AFE08 /* RESOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOAppDelegate.h; sourceTree = "<group>"; };
+		654FF63817234172001AFE08 /* RESOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOAppDelegate.m; sourceTree = "<group>"; };
+		654FF63917234172001AFE08 /* ResoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResoTypes.h; sourceTree = "<group>"; };
+		654FF63A17234172001AFE08 /* RESOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOViewController.h; sourceTree = "<group>"; };
+		654FF63B17234172001AFE08 /* RESOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOViewController.m; sourceTree = "<group>"; };
+		654FF63C17234172001AFE08 /* RippleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleModel.h; sourceTree = "<group>"; };
+		654FF63D17234172001AFE08 /* RippleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleModel.m; sourceTree = "<group>"; };
+		654FF63E17234172001AFE08 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		654FF63F17234172001AFE08 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		654FF66F17234397001AFE08 /* nebula_orange.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nebula_orange.jpg; sourceTree = "<group>"; };
+		65EADA0A1703F784007CB200 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		651002C115F2E3BA00B38890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6510034E15F3F2B000B38890 /* CoreVideo.framework in Frameworks */,
+				651002E415F2E5AA00B38890 /* GLKit.framework in Frameworks */,
+				651002E215F2E59F00B38890 /* OpenGLES.framework in Frameworks */,
+				651002E015F2E59700B38890 /* QuartzCore.framework in Frameworks */,
+				651002C915F2E3BA00B38890 /* UIKit.framework in Frameworks */,
+				651002CB15F2E3BA00B38890 /* Foundation.framework in Frameworks */,
+				651002CD15F2E3BA00B38890 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651002B915F2E3BA00B38890 = {
+			isa = PBXGroup;
+			children = (
+				654FF62017234172001AFE08 /* gl_image_ripple */,
+				65EADA0A1703F784007CB200 /* Default-568h@2x.png */,
+				6510034D15F3F2B000B38890 /* CoreVideo.framework */,
+				651002E315F2E5AA00B38890 /* GLKit.framework */,
+				651002E115F2E59F00B38890 /* OpenGLES.framework */,
+				651002DF15F2E59700B38890 /* QuartzCore.framework */,
+				651002C715F2E3BA00B38890 /* Frameworks */,
+				651002C515F2E3BA00B38890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		651002C515F2E3BA00B38890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				651002C415F2E3BA00B38890 /* gl_image_ripple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		651002C715F2E3BA00B38890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				651002C815F2E3BA00B38890 /* UIKit.framework */,
+				651002CA15F2E3BA00B38890 /* Foundation.framework */,
+				651002CC15F2E3BA00B38890 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		654FF62017234172001AFE08 /* gl_image_ripple */ = {
+			isa = PBXGroup;
+			children = (
+				654FF66F17234397001AFE08 /* nebula_orange.jpg */,
+				654FF62117234172001AFE08 /* InfoPlist.strings */,
+				654FF62317234172001AFE08 /* gl_image_ripple-Info.plist */,
+				654FF62417234172001AFE08 /* gl_image_ripple-Prefix.pch */,
+				654FF62917234172001AFE08 /* main.m */,
+				654FF62A17234172001AFE08 /* MainStoryboard.storyboard */,
+				654FF63717234172001AFE08 /* RESOAppDelegate.h */,
+				654FF63817234172001AFE08 /* RESOAppDelegate.m */,
+				654FF63917234172001AFE08 /* ResoTypes.h */,
+				654FF63A17234172001AFE08 /* RESOViewController.h */,
+				654FF63B17234172001AFE08 /* RESOViewController.m */,
+				654FF63C17234172001AFE08 /* RippleModel.h */,
+				654FF63D17234172001AFE08 /* RippleModel.m */,
+				654FF63E17234172001AFE08 /* Shader.fsh */,
+				654FF63F17234172001AFE08 /* Shader.vsh */,
+			);
+			path = gl_image_ripple;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		651002C315F2E3BA00B38890 /* gl_image_ripple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651002DC15F2E3BA00B38890 /* Build configuration list for PBXNativeTarget "gl_image_ripple" */;
+			buildPhases = (
+				651002C015F2E3BA00B38890 /* Sources */,
+				651002C115F2E3BA00B38890 /* Frameworks */,
+				651002C215F2E3BA00B38890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gl_image_ripple;
+			productName = gl_image_ripple;
+			productReference = 651002C415F2E3BA00B38890 /* gl_image_ripple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		651002BB15F2E3BA00B38890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RESO;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Monomyth Software";
+			};
+			buildConfigurationList = 651002BE15F2E3BA00B38890 /* Build configuration list for PBXProject "gl_image_ripple" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 651002B915F2E3BA00B38890;
+			productRefGroup = 651002C515F2E3BA00B38890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				651002C315F2E3BA00B38890 /* gl_image_ripple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		651002C215F2E3BA00B38890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654FF66D17234322001AFE08 /* Shader.fsh in Resources */,
+				654FF66E17234322001AFE08 /* Shader.vsh in Resources */,
+				65EADA0B1703F784007CB200 /* Default-568h@2x.png in Resources */,
+				654FF64A17234172001AFE08 /* InfoPlist.strings in Resources */,
+				654FF65117234172001AFE08 /* MainStoryboard.storyboard in Resources */,
+				654FF67017234397001AFE08 /* nebula_orange.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		651002C015F2E3BA00B38890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				654FF65017234172001AFE08 /* main.m in Sources */,
+				654FF65E17234172001AFE08 /* RESOAppDelegate.m in Sources */,
+				654FF65F17234172001AFE08 /* RESOViewController.m in Sources */,
+				654FF66017234172001AFE08 /* RippleModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		654FF62117234172001AFE08 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				654FF62217234172001AFE08 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		651002DA15F2E3BA00B38890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "gl_image_ripple/gl_image_ripple-Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "gl_image_ripple/gl_image_ripple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		651002DB15F2E3BA00B38890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "gl_image_ripple/gl_image_ripple-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		651002DD15F2E3BA00B38890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: William Stepp (3CUFZE35KR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Stepp (3CUFZE35KR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gl_image_ripple/gl_image_ripple-Prefix.pch";
+				INFOPLIST_FILE = "gl_image_ripple/gl_image_ripple-Info.plist";
+				PRODUCT_NAME = gl_image_ripple;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		651002DE15F2E3BA00B38890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: William Stepp (3CUFZE35KR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: William Stepp (3CUFZE35KR)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gl_image_ripple/gl_image_ripple-Prefix.pch";
+				INFOPLIST_FILE = "gl_image_ripple/gl_image_ripple-Info.plist";
+				PRODUCT_NAME = gl_image_ripple;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		651002BE15F2E3BA00B38890 /* Build configuration list for PBXProject "gl_image_ripple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651002DA15F2E3BA00B38890 /* Debug */,
+				651002DB15F2E3BA00B38890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651002DC15F2E3BA00B38890 /* Build configuration list for PBXNativeTarget "gl_image_ripple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651002DD15F2E3BA00B38890 /* Debug */,
+				651002DE15F2E3BA00B38890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 651002BB15F2E3BA00B38890 /* Project object */;
+}
