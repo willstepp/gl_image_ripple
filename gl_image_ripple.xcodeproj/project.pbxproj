@@ -17,8 +17,8 @@
 		654FF64A17234172001AFE08 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 654FF62117234172001AFE08 /* InfoPlist.strings */; };
 		654FF65017234172001AFE08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF62917234172001AFE08 /* main.m */; };
 		654FF65117234172001AFE08 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654FF62A17234172001AFE08 /* MainStoryboard.storyboard */; };
-		654FF65E17234172001AFE08 /* RESOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63817234172001AFE08 /* RESOAppDelegate.m */; };
-		654FF65F17234172001AFE08 /* RESOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63B17234172001AFE08 /* RESOViewController.m */; };
+		654FF65E17234172001AFE08 /* GLIRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63817234172001AFE08 /* GLIRAppDelegate.m */; };
+		654FF65F17234172001AFE08 /* GLIRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63B17234172001AFE08 /* GLIRViewController.m */; };
 		654FF66017234172001AFE08 /* RippleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 654FF63D17234172001AFE08 /* RippleModel.m */; };
 		654FF66D17234322001AFE08 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 654FF63E17234172001AFE08 /* Shader.fsh */; };
 		654FF66E17234322001AFE08 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 654FF63F17234172001AFE08 /* Shader.vsh */; };
@@ -40,11 +40,10 @@
 		654FF62417234172001AFE08 /* gl_image_ripple-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gl_image_ripple-Prefix.pch"; sourceTree = "<group>"; };
 		654FF62917234172001AFE08 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		654FF62A17234172001AFE08 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		654FF63717234172001AFE08 /* RESOAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOAppDelegate.h; sourceTree = "<group>"; };
-		654FF63817234172001AFE08 /* RESOAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOAppDelegate.m; sourceTree = "<group>"; };
-		654FF63917234172001AFE08 /* ResoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResoTypes.h; sourceTree = "<group>"; };
-		654FF63A17234172001AFE08 /* RESOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESOViewController.h; sourceTree = "<group>"; };
-		654FF63B17234172001AFE08 /* RESOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESOViewController.m; sourceTree = "<group>"; };
+		654FF63717234172001AFE08 /* GLIRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIRAppDelegate.h; sourceTree = "<group>"; };
+		654FF63817234172001AFE08 /* GLIRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIRAppDelegate.m; sourceTree = "<group>"; };
+		654FF63A17234172001AFE08 /* GLIRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLIRViewController.h; sourceTree = "<group>"; };
+		654FF63B17234172001AFE08 /* GLIRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLIRViewController.m; sourceTree = "<group>"; };
 		654FF63C17234172001AFE08 /* RippleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleModel.h; sourceTree = "<group>"; };
 		654FF63D17234172001AFE08 /* RippleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleModel.m; sourceTree = "<group>"; };
 		654FF63E17234172001AFE08 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
@@ -112,11 +111,10 @@
 				654FF62417234172001AFE08 /* gl_image_ripple-Prefix.pch */,
 				654FF62917234172001AFE08 /* main.m */,
 				654FF62A17234172001AFE08 /* MainStoryboard.storyboard */,
-				654FF63717234172001AFE08 /* RESOAppDelegate.h */,
-				654FF63817234172001AFE08 /* RESOAppDelegate.m */,
-				654FF63917234172001AFE08 /* ResoTypes.h */,
-				654FF63A17234172001AFE08 /* RESOViewController.h */,
-				654FF63B17234172001AFE08 /* RESOViewController.m */,
+				654FF63717234172001AFE08 /* GLIRAppDelegate.h */,
+				654FF63817234172001AFE08 /* GLIRAppDelegate.m */,
+				654FF63A17234172001AFE08 /* GLIRViewController.h */,
+				654FF63B17234172001AFE08 /* GLIRViewController.m */,
 				654FF63C17234172001AFE08 /* RippleModel.h */,
 				654FF63D17234172001AFE08 /* RippleModel.m */,
 				654FF63E17234172001AFE08 /* Shader.fsh */,
@@ -194,8 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				654FF65017234172001AFE08 /* main.m in Sources */,
-				654FF65E17234172001AFE08 /* RESOAppDelegate.m in Sources */,
-				654FF65F17234172001AFE08 /* RESOViewController.m in Sources */,
+				654FF65E17234172001AFE08 /* GLIRAppDelegate.m in Sources */,
+				654FF65F17234172001AFE08 /* GLIRViewController.m in Sources */,
 				654FF66017234172001AFE08 /* RippleModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

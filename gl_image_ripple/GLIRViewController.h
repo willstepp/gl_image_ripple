@@ -1,5 +1,5 @@
 //
-//  RESOViewController.h
+//  GLIRViewController.h
 //  gl_image_ripple
 //
 //  Created by Daniel Stepp on 9/1/12.
@@ -7,7 +7,6 @@
 //
 
 #import <GLKit/GLKit.h>
-#import "ResoTypes.h"
 
-@interface RESOViewController : GLKViewController
+@interface GLIRViewController : GLKViewController
 @end

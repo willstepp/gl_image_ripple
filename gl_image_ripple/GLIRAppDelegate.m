@@ -1,15 +1,15 @@
 //
-//  RESOAppDelegate.m
-//  gl_sandbox
+//  GLIRAppDelegate.m
+//  gl_image_ripple
 //
 //  Created by Daniel Stepp on 9/1/12.
 //  Copyright (c) 2012 Monomyth Software. All rights reserved.
 //
 
-#import "RESOAppDelegate.h"
+#import "GLIRAppDelegate.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation RESOAppDelegate
+@implementation GLIRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

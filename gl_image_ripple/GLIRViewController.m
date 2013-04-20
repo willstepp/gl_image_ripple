@@ -1,5 +1,5 @@
 //
-//  RESOViewController.m
+//  GLIRViewController.m
 //  gl_image_ripple
 //
 //  Created by Daniel Stepp on 9/1/12.
@@ -9,7 +9,7 @@
 #import <CoreVideo/CVOpenGLESTextureCache.h>
 #import <QuartzCore/QuartzCore.h>
 #include <stdlib.h>
-#import "RESOViewController.h"
+#import "GLIRViewController.h"
 #import "RippleModel.h"
 
 // Uniform index.
@@ -31,7 +31,7 @@ enum
     NUM_ATTRIBUTES
 };
 
-@interface RESOViewController (){
+@interface GLIRViewController (){
     CGFloat _screenWidth;
     CGFloat _screenHeight;
     
@@ -60,7 +60,7 @@ enum
 - (CGImageRef)CGImageRotatedByAngle:(CGImageRef)imgRef angle:(CGFloat)angle;
 @end
 
-@implementation RESOViewController
+@implementation GLIRViewController
 @synthesize context = _context;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
