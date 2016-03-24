@@ -168,6 +168,7 @@ enum
     }
     
     CVOpenGLESTextureCacheFlush(_textureCache, 0);
+    CFRelease(_textureCache);
 }
 
 - (CVPixelBufferRef) pixelBufferFromCGImage: (CGImageRef) image
@@ -195,6 +196,7 @@ enum
     
     CGContextDrawImage(context, CGRectMake(0, 0, CGImageGetWidth(image),
                                            CGImageGetHeight(image)), image);
+    CGImageRelease(image);
     CGColorSpaceRelease(rgbColorSpace);
     CGContextRelease(context);
     
@@ -239,13 +241,24 @@ enum
 {
     [EAGLContext setCurrentContext:_context];
     
-    glDeleteBuffers(1, &_positionVBO);
-    glDeleteBuffers(1, &_texcoordVBO);
-    glDeleteBuffers(1, &_indexVBO);
+    [self tearDownGL:_program];
+    [self tearDownGL:_positionVBO];
+    [self tearDownGL:_texcoordVBO];
+    [self tearDownGL:_indexVBO];
     
-    if (_program) {
-        glDeleteProgram(_program);
-        _program = 0;
+    CVBufferRelease(_pixelBuffer);
+
+    [self cleanUpTextures];
+}
+
+- (void)tearDownGL:(GLuint)target
+{
+    if (target) {
+        glDeleteProgram(target);
+        glDeleteBuffers(1, &target);
+        glDeleteTextures(1, &target);
+        glDeleteShader(target);
+        target = 0;
     }
 }
 
@@ -344,6 +357,7 @@ enum
   // 3
   CGContextDrawImage(spriteContext, CGRectMake(0, 0, _width, _height), spriteImage);
   CGContextRelease(spriteContext);
+  CGImageRelease(spriteImage);
   
   // 4
   GLuint texName;
